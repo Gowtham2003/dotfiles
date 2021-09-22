@@ -46,13 +46,14 @@ gls.left[1] = {
 gls.left[2] = {
     statusIcon = {
         provider = function()
-            local platform = os.capture("uname -o"):lower()
-            local icons = {
-                android = "  ",
-                arch = "   ",
-                manjaro = "   ",
-            }
-            return icons[platform]
+--            local platform = os.capture("uname -o"):lower()
+ --           local icons = {
+  --              android = "  ",
+   --             arch = "   ",
+    --            manjaro = "   ",
+     --       }
+      --      return icons[platform]
+            return "  "
         end,
         highlight = {colors.bg, colors.nord},
         separator = " ",

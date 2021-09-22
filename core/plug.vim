@@ -16,6 +16,11 @@ call plug#begin()
   Plug 'hrsh7th/cmp-nvim-lsp'
   " Install the buffer completion source                  
   Plug 'hrsh7th/cmp-buffer'
+  " For vsnip user.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'rafamadriz/friendly-snippets'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update      
   Plug 'folke/trouble.nvim'
+  Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
