@@ -5,6 +5,10 @@ nnoremap <leader>w :w <cr>
 
 nnoremap <C-Q> :q!<cr>
 nnoremap <C-S> :w<cr>
+nnoremap <C-j> <cmd>split <bar> term<CR>
+nnoremap <C-k> <cmd>vsplit <bar> term<CR>
+nnoremap <C-z> u 
+nnoremap <C-x> <C-R> 
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
