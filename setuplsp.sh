@@ -1,3 +1,3 @@
 #! /bin/bash
 
-npm i -g typescript-language-server @fsouza/prettierd vls pyright @tailwindcss/language-server
+npm i -g typescript-language-server @fsouza/prettierd vls pyright @tailwindcss/language-server ls_emmet

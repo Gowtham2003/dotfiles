@@ -46,3 +46,5 @@ require('formatter').setup({
     -- other formatters ...
   }
 })
+
+require("emmet")
