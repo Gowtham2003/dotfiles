@@ -23,4 +23,5 @@ Plug 'rafamadriz/friendly-snippets'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update      
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'mhartington/formatter.nvim'
 call plug#end()

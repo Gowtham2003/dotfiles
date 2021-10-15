@@ -12,3 +12,37 @@ require("trouble").setup {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
   }
+
+vim.api.nvim_exec([[
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.rs FormatWrite
+augroup END
+]], true)
+
+require('formatter').setup({
+  logging = false,
+  filetype = {
+    javascript = {
+        -- prettierd
+       function()
+          return {
+            exe = "prettierd",
+            args = {vim.api.nvim_buf_get_name(0)},
+            stdin = true
+          }
+        end
+    },
+    javascriptreact = {
+        -- prettierd
+       function()
+          return {
+            exe = "prettierd",
+            args = {vim.api.nvim_buf_get_name(0)},
+            stdin = true
+          }
+        end
+    },
+    -- other formatters ...
+  }
+})
