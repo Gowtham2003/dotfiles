@@ -16,6 +16,7 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 " Find files using Telescope command-line sugar.
+nnoremap <space>f <cmd>CHADopen<cr>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <C-F> <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

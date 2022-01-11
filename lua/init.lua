@@ -3,6 +3,7 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup {}
 require'lspconfig'.intelephense.setup {}
 require'lspconfig'.tailwindcss.setup {}
+require'lspconfig'.clangd.setup {}
 require("bufferline").setup{}
 local saga = require 'lspsaga'
 saga.init_lsp_saga()
@@ -43,8 +44,29 @@ require('formatter').setup({
           }
         end
     },
+    typescript = {
+        -- prettierd
+       function()
+          return {
+            exe = "prettierd",
+            args = {vim.api.nvim_buf_get_name(0)},
+            stdin = true
+          }
+        end
+    },
+    typescriptreact = {
+        -- prettierd
+       function()
+          return {
+            exe = "prettierd",
+            args = {vim.api.nvim_buf_get_name(0)},
+            stdin = true
+          }
+        end
+    },
     -- other formatters ...
   }
 })
 
 require("emmet")
+

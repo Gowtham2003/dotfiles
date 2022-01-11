@@ -65,7 +65,7 @@ gls.left[3] = {
     FileIcon = {
         provider = "FileIcon",
         condition = buffer_not_empty,
-        highlight = {require("galaxyline.provider_fileinfo").get_file_icon_color, colors.lightbg}
+        highlight = {require("galaxyline.providers.fileinfo").get_file_icon_color, colors.lightbg}
     }
 }
 
@@ -162,7 +162,7 @@ gls.right[1] = {
         provider = function()
             return "  "
         end,
-        condition = require("galaxyline.provider_vcs").check_git_workspace,
+        condition = require("galaxyline.providers.vcs").check_git_workspace,
         highlight = {colors.green, colors.line_bg}
     }
 }
@@ -170,7 +170,7 @@ gls.right[1] = {
 gls.right[2] = {
     GitBranch = {
         provider = "GitBranch",
-        condition = require("galaxyline.provider_vcs").check_git_workspace,
+        condition = require("galaxyline.providers.vcs").check_git_workspace,
         highlight = {colors.green, colors.line_bg}
     }
 }

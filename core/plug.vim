@@ -2,7 +2,8 @@ call plug#begin()
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update      
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+"    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    Plug 'NTBBloodbath/galaxyline.nvim' , {'branch': 'main'}
     Plug 'akinsho/bufferline.nvim'
     Plug 'mhartington/oceanic-next'
     Plug 'jiangmiao/auto-pairs'
@@ -23,5 +24,7 @@ Plug 'rafamadriz/friendly-snippets'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update      
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
   Plug 'mhartington/formatter.nvim'
 call plug#end()

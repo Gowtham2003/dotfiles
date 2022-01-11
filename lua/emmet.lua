@@ -4,9 +4,9 @@ local configs = require'lspconfig/configs'
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-configs.ls_emmet = {
+configs.emmet_ls = {
   default_config = {
-    cmd = { 'ls_emmet', '--stdio' };
+    cmd = { 'emmet-ls', '--stdio' };
     filetypes = { 'html', 'css', 'scss', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'haml',
       'xml', 'xsl', 'pug', 'slim', 'sass', 'stylus', 'less', 'sss'};
     root_dir = function(fname)
@@ -16,6 +16,6 @@ configs.ls_emmet = {
   };
 }
 
-lspconfig.ls_emmet.setup{ capabilities = capabilities }
+lspconfig.emmet_ls.setup{ capabilities = capabilities }
 
 
