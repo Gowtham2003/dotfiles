@@ -35,8 +35,8 @@ inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
 
 " --------------------------------------------
 nnoremap <space>tt <cmd>TroubleToggle<cr>
-nnoremap <space>wd <cmd>TroubleToggle lsp_workspace_diagnostics<cr>
-nnoremap <space>d <cmd>TroubleToggle lsp_document_diagnostics<cr>
+nnoremap <space>wd <cmd>TroubleToggle workspace_diagnostics<cr>
+nnoremap <space>d <cmd>TroubleToggle document_diagnostics<cr>
 nnoremap <space>qf <cmd>TroubleToggle quickfix<cr>
 nnoremap <space>ll <cmd>TroubleToggle loclist<cr>
 nnoremap gR <cmd>TroubleToggle lsp_references<cr>
