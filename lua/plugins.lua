@@ -10,6 +10,10 @@ return require('packer').startup(function()
   use 'ryanoasis/vim-devicons'
   use 'neovim/nvim-lspconfig'
   use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+}
+  use {
   'NTBBloodbath/galaxyline.nvim',
     branch = 'main',
     -- your statusline
@@ -35,11 +39,12 @@ use { 'tami5/lspsaga.nvim' }
 
 -- Things To Change in Future
     use 'jiangmiao/auto-pairs'
-  -- Install nvim-cmp                                      
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  -- Install the buffer completion source                  
-  use 'hrsh7th/cmp-buffer'
+  -- Install nvim-cmp                                  
+use 'hrsh7th/cmp-nvim-lsp'
+use 'hrsh7th/cmp-buffer'
+use 'hrsh7th/cmp-path'
+use 'hrsh7th/cmp-cmdline'
+use 'hrsh7th/nvim-cmp'
   -- For vsnip user.
 use 'hrsh7th/cmp-vsnip'
 use 'hrsh7th/vim-vsnip'

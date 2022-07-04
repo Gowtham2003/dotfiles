@@ -6,5 +6,5 @@ luafile ~/.config/nvim/lua/plugins.lua
 luafile ~/.config/nvim/lua/treesitter.lua
 luafile ~/.config/nvim/lua/statusline.lua
 luafile ~/.config/nvim/lua/lspcomp.lua
-luafile ~/.config/nvim/lua/lua-ls.lua
+" luafile ~/.config/nvim/lua/lua-ls.lua
 colorscheme mynord
