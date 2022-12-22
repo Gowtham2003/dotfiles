@@ -10,7 +10,7 @@ require("trouble").setup {
 vim.api.nvim_exec([[
 augroup FormatAutogroup
   autocmd!
-  autocmd BufWritePost *.html,*.js,*.jsx,*.ts,*.tsx,*.rs FormatWrite
+  autocmd BufWritePost *.html,*.js,*.jsx,*.ts,*.tsx,*.rs,*.svelte FormatWrite
 augroup END
 ]], true)
 
@@ -58,6 +58,16 @@ require('formatter').setup({
         end
     },
     typescriptreact = {
+        -- prettierd
+       function()
+          return {
+            exe = "prettierd",
+            args = {vim.api.nvim_buf_get_name(0)},
+            stdin = true
+          }
+        end
+    },
+    svelte = {
         -- prettierd
        function()
           return {

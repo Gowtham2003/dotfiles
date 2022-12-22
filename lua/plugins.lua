@@ -8,7 +8,6 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'ryanoasis/vim-devicons'
-  use 'neovim/nvim-lspconfig'
   use {
     "williamboman/nvim-lsp-installer",
     "neovim/nvim-lspconfig",
@@ -28,12 +27,6 @@ return require('packer').startup(function()
   use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
-}
-use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
 }
 use { 'tami5/lspsaga.nvim' }
 

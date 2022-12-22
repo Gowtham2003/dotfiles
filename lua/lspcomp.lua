@@ -88,28 +88,29 @@ local cmp = require("cmp")
 
   -- Setup lspconfig.
   require('lspconfig')["tsserver"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  }
+    capabilities = require('cmp_nvim_lsp').default_capabilities() }
   -- require('lspconfig')["sumneko_lua"].setup {
   --  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- }
 
   require('lspconfig')["intelephense"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  }
+    capabilities = require('cmp_nvim_lsp').default_capabilities() }
   require('lspconfig')["vls"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  }
+    capabilities = require('cmp_nvim_lsp').default_capabilities()  }
   require('lspconfig')["pyright"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    capabilities = require('cmp_nvim_lsp').default_capabilities()
   }
   require('lspconfig')["intelephense"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    capabilities = require('cmp_nvim_lsp').default_capabilities()
   }
   require('lspconfig')["tailwindcss"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    capabilities = require('cmp_nvim_lsp').default_capabilities()
   }
   require('lspconfig')["clangd"].setup {
-    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    capabilities = require('cmp_nvim_lsp').default_capabilities()
+  }
+
+  require('lspconfig')["svelte"].setup {
+    capabilities = require('cmp_nvim_lsp').default_capabilities()
   }
 
